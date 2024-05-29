@@ -1,0 +1,35 @@
+car.java dosyası
+package car;
+
+
+public class car {
+   private String model;
+   private int year;
+
+   public car(String model,int year){
+    this.model = model;
+    this.year = year;
+}
+ 
+public boolean start(){
+    System.out.println("the engine started");
+return true;
+
+}
+public void accelerate(){
+    System.out.println(model+ "is accelerating");
+} 
+
+}
+main.java dosyası
+package car;
+
+public class main{
+public static void main(String[] args) {
+    car araba = new car("astra",2015);
+    araba.start();
+    araba.accelerate();
+}
+
+}
+
